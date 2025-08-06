@@ -5,4 +5,4 @@ from django.contrib.auth.decorators import login_required
 @login_required
 def dashboard(request):
     bugs = Bug.objects.all()
-    return render(request, 'dashboard.html', {'bugs': bugs})
+    return render(request, 'tracker/dashboard.html', {'bugs': bugs})
