@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bug Tracker</title>
+</head>
+<body>
+    <h1>Bug Tracker Dashboard</h1>
+    <ul>
+      {% for bug in bugs %}
+        <li>{{ bug.title }} - {{ bug.status }} ({{ bug.project.name }})</li>
+      {% endfor %}
+    </ul>
+</body>
+</html>
