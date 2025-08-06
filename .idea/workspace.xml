@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Create a simple dashboard">
-      <change afterPath="$PROJECT_DIR$/bugtracker/tracker/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bugtracker/tracker/static/tracker/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bugtracker/tracker/static/tracker/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/project_form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/project_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Add ability to navigate to the bug details" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +118,111 @@
       <option name="project" value="LOCAL" />
       <updated>1754482913025</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Create a base.html as template for all html files">
+      <option name="closed" value="true" />
+      <created>1754485898363</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1754485898363</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Create all html files">
+      <option name="closed" value="true" />
+      <created>1754485918866</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1754485918866</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Create all html files">
+      <option name="closed" value="true" />
+      <created>1754485924931</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1754485924931</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Create validation for html forms">
+      <option name="closed" value="true" />
+      <created>1754485994532</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1754485994532</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Create login.html">
+      <option name="closed" value="true" />
+      <created>1754486015878</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1754486015878</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Create static files">
+      <option name="closed" value="true" />
+      <created>1754486029149</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1754486029149</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Update backend to render all html files">
+      <option name="closed" value="true" />
+      <created>1754486058160</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1754486058160</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Create url paths for all html files">
+      <option name="closed" value="true" />
+      <created>1754486076577</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1754486076577</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add registration">
+      <option name="closed" value="true" />
+      <created>1754487554538</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1754487554538</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add registration">
+      <option name="closed" value="true" />
+      <created>1754487561510</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1754487561510</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fix comments to reflect the role of user">
+      <option name="closed" value="true" />
+      <created>1754487618862</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1754487618862</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fix comments to reflect the role of user">
+      <option name="closed" value="true" />
+      <created>1754487624767</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1754487624767</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add ability to navigate to the bug details">
+      <option name="closed" value="true" />
+      <created>1754487678548</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1754487678548</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +242,16 @@
     <MESSAGE value="Create a basic frontpage for application + URL routing" />
     <MESSAGE value="Create a basic login page for users." />
     <MESSAGE value="Create a simple dashboard" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a simple dashboard" />
+    <MESSAGE value="Create a base.html as template for all html files" />
+    <MESSAGE value="Create all html files" />
+    <MESSAGE value="Create validation for html forms" />
+    <MESSAGE value="Create login.html" />
+    <MESSAGE value="Create static files" />
+    <MESSAGE value="Update backend to render all html files" />
+    <MESSAGE value="Create url paths for all html files" />
+    <MESSAGE value="Add registration" />
+    <MESSAGE value="Fix comments to reflect the role of user" />
+    <MESSAGE value="Add ability to navigate to the bug details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ability to navigate to the bug details" />
   </component>
 </project>
