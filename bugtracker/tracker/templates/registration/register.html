@@ -5,11 +5,23 @@
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
+
+    <label for="org_choice">Join Organization:</label>
+    <select name="org_choice" class="form-select mb-2">
+        {% for org in organizations %}
+            <option value="{{ org.id }}">{{ org.name }}</option>
+        {% endfor %}
+    </select>
+
+    <label for="new_org">Or create a new one:</label>
+    <input type="text" name="new_org" class="form-control mb-3" placeholder="New organization name">
+
     <label for="role">Account Type:</label>
     <select name="role" class="form-select mb-3">
         <option value="Developer">Developer</option>
         <option value="Tester">Tester</option>
     </select>
+
     <button type="submit" class="btn btn-primary">Register</button>
 </form>
 {% endblock %}

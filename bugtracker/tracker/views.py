@@ -1,21 +1,23 @@
 from django.shortcuts import render, redirect, get_object_or_404
+from .models import Bug, Project, Organization, UserProfile
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from .forms import BugForm, CommentForm, ProjectForm
 from django.contrib.auth.models import Group
 from django.contrib.auth import login
-from .models import Bug, Project
 
 
 @login_required
 def dashboard(request):
-    bugs = Bug.objects.all().order_by('-created_at')
+    user_org = request.user.userprofile.organization
+    bugs = Bug.objects.filter(organization=user_org).order_by('-created_at')
     return render(request, 'tracker/dashboard.html', {'bugs': bugs})
 
 
 @login_required
 def bug_detail(request, bug_id):
-    bug = get_object_or_404(Bug, id=bug_id)
+    user_org = request.user.userprofile.organization
+    bug = get_object_or_404(Bug, id=bug_id, organization=user_org)
     comments = bug.comment_set.all().order_by('created_at')
 
     if request.method == 'POST':
@@ -42,6 +44,7 @@ def create_bug(request):
         form = BugForm(request.POST)
         if form.is_valid():
             bug = form.save(commit=False)
+            bug.organization = request.user.userprofile.organization
             bug.created_by = request.user
             bug.save()
             return redirect('dashboard')
@@ -51,7 +54,8 @@ def create_bug(request):
 
 @login_required
 def project_list(request):
-    projects = Project.objects.all()
+    user_org = request.user.userprofile.organization
+    projects = Project.objects.filter(organization=user_org)
     return render(request, 'tracker/project_list.html', {'projects': projects})
 
 @login_required
@@ -60,6 +64,7 @@ def create_project(request):
         form = ProjectForm(request.POST)
         if form.is_valid():
             project = form.save(commit=False)
+            project.organization = request.user.userprofile.organization
             project.created_by = request.user
             project.save()
             return redirect('project_list')
@@ -72,12 +77,26 @@ def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         role = request.POST.get('role')
-        if form.is_valid() and role in ['Developer', 'Tester']:
+        org_choice = request.POST.get('org_choice')
+        new_org_name = request.POST.get('new_org')
+
+        if form.is_valid() and role:
             user = form.save()
+
+            if new_org_name:
+                organization, _ = Organization.objects.get_or_create(name=new_org_name)
+            else:
+                organization = Organization.objects.get(id=org_choice)
+
+            UserProfile.objects.create(user=user, organization=organization)
+
             group = Group.objects.get(name=role)
             user.groups.add(group)
+
             login(request, user)
             return redirect('dashboard')
     else:
         form = UserCreationForm()
-    return render(request, 'tracker/register.html', {'form': form})
+
+    organizations = Organization.objects.all()
+    return render(request, 'tracker/register.html', {'form': form, 'organizations': organizations})
