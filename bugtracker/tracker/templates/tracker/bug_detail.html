@@ -1,28 +1,45 @@
 {% extends "tracker/base.html" %}
 {% block title %}Bug Details{% endblock %}
+
 {% block content %}
 <div class="form-container">
     <h2>{{ bug.title }}</h2>
+
     <p><strong>Project:</strong> {{ bug.project.name }}</p>
     <p><strong>Description:</strong> {{ bug.description }}</p>
     <p><strong>Status:</strong> {{ bug.status }}</p>
     <p><strong>Severity:</strong> {{ bug.severity }}</p>
     <p><strong>Assigned to:</strong> {{ bug.assigned_to }}</p>
-    <p><strong>Created by:</strong> {{ bug.created_by }}</p>
+    <p>
+        <strong>Created by:</strong> {{ bug.created_by.username }}
+        <span class="badge bg-secondary">{{ bug.created_by.groups.first.name|default:"Unassigned" }}</span>
+    </p>
     <p><strong>Created at:</strong> {{ bug.created_at }}</p>
 
+    <hr>
+
     <h4>Comments</h4>
-    <ul class="list-group mb-3">
+    <ul class="list-group mb-4">
         {% for comment in bug.comment_set.all %}
             <li class="list-group-item">
-                <strong>{{ comment.user }}:</strong> {{ comment.content }}<br>
-                <small class="text-muted">{{ comment.created_at }}</small>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong>{{ comment.user.username }}</strong>
+                        <span class="badge bg-info text-dark">
+                            {{ comment.user.groups.first.name|default:"Unassigned" }}
+                        </span>
+                        <p class="mb-1">{{ comment.content }}</p>
+                    </div>
+                    <small class="text-muted">{{ comment.created_at|date:"M d, Y H:i" }}</small>
+                </div>
             </li>
+        {% empty %}
+            <li class="list-group-item text-muted">No comments yet.</li>
         {% endfor %}
     </ul>
 
     <h5>Add a comment</h5>
-    <form method="post">
+    <form method="post" novalidate>
         {% csrf_token %}
         {{ comment_form.as_p }}
         <button type="submit" class="btn btn-primary">Add Comment</button>
