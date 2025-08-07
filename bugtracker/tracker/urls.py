@@ -11,5 +11,5 @@ urlpatterns = [
     path('bug/create/', views.create_bug, name='create_bug'),
     path('projects/', views.project_list, name='project_list'),
     path('projects/create/', views.create_project, name='create_project'),
-    path('register/', views.register, name='register'),
+    path('accounts/register/', views.register, name='register'),
 ]
