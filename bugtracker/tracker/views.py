@@ -84,14 +84,38 @@ def register(request):
             user = form.save()
 
             if new_org_name:
-                organization, _ = Organization.objects.get_or_create(name=new_org_name)
+                organization, _ = Organization.objects.get_or_create(name=new_org_name.strip())
+            elif org_choice:
+                try:
+                    organization = Organization.objects.get(id=org_choice)
+                except Organization.DoesNotExist:
+                    form.add_error(None, "Selected organization does not exist.")
+                    organizations = Organization.objects.all()
+                    return render(request, 'registration/register.html', {
+                        'form': form,
+                        'organizations': organizations
+                    })
             else:
-                organization = Organization.objects.get(id=org_choice)
+                form.add_error(None, "You must either join or create an organization.")
+                organizations = Organization.objects.all()
+                return render(request, 'registration/register.html', {
+                    'form': form,
+                    'organizations': organizations
+                })
 
             UserProfile.objects.create(user=user, organization=organization)
 
-            group = Group.objects.get(name=role)
-            user.groups.add(group)
+            # Assign group
+            try:
+                group = Group.objects.get(name=role)
+                user.groups.add(group)
+            except Group.DoesNotExist:
+                form.add_error(None, "Invalid role selected.")
+                organizations = Organization.objects.all()
+                return render(request, 'registration/register.html', {
+                    'form': form,
+                    'organizations': organizations
+                })
 
             login(request, user)
             return redirect('dashboard')
@@ -99,4 +123,7 @@ def register(request):
         form = UserCreationForm()
 
     organizations = Organization.objects.all()
-    return render(request, 'tracker/register.html', {'form': form, 'organizations': organizations})
+    return render(request, 'registration/register.html', {
+        'form': form,
+        'organizations': organizations
+    })
