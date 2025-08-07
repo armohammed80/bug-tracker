@@ -15,7 +15,7 @@
     </thead>
     <tbody>
         {% for bug in bugs %}
-        <tr>
+        <tr class="{% if bug.severity == 'Critical' %}table-danger{% elif bug.severity == 'High' %}table-warning{% elif bug.severity == 'Medium' %}table-info{% elif bug.severity == 'Low' %}table-success{% endif %}">
             <td><a href="{% url 'bug_detail' bug.id %}">{{ bug.title }}</a></td>
             <td>{{ bug.project.name }}</td>
             <td>{{ bug.assigned_to }}</td>
