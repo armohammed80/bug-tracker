@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Adding the option to update status of bug">
+    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Added color-coding based on severity in dashboard">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bugtracker/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/project_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/project_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -378,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754595344522</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added color-coding based on severity in dashboard">
+      <option name="closed" value="true" />
+      <created>1754595590762</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1754595590762</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,7 +403,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create a simple dashboard" />
     <MESSAGE value="Create a base.html as template for all html files" />
     <MESSAGE value="Create all html files" />
     <MESSAGE value="Create validation for html forms" />
@@ -418,6 +427,7 @@
     <MESSAGE value="Removed 'Admin' role" />
     <MESSAGE value="Migration: Removing `is_admin` from UserProfile" />
     <MESSAGE value="Adding the option to update status of bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding the option to update status of bug" />
+    <MESSAGE value="Added color-coding based on severity in dashboard" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added color-coding based on severity in dashboard" />
   </component>
 </project>

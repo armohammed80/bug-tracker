@@ -1,0 +1,39 @@
+
+
+{% extends "tracker/base.html" %}
+{% block title %}{{ project.name }} - Project Details{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>{{ project.name }}</h2>
+    <p>{{ project.description }}</p>
+
+    <h4 class="mt-4">Bugs in this Project:</h4>
+    {% if bugs %}
+        <table class="table table-striped mt-3 table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>Title</th>
+                    <th>Severity</th>
+                    <th>Status</th>
+                    <th>Assigned To</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for bug in bugs %}
+                    <tr class="{% if bug.severity == 'Critical' %}table-danger{% elif bug.severity == 'High' %}table-warning{% elif bug.severity == 'Medium' %}table-info{% elif bug.severity == 'Low' %}table-success{% endif %}">
+                        <td><a href="{% url 'bug_detail' bug.id %}">{{ bug.title }}</a></td>
+                        <td>{{ bug.severity }}</td>
+                        <td>{{ bug.status }}</td>
+                        <td>{{ bug.assigned_to }}</td>
+                        <td>{{ bug.created_at }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p class="text-muted">No bugs found for this project.</p>
+    {% endif %}
+</div>
+{% endblock %}

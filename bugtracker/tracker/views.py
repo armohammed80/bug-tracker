@@ -51,6 +51,16 @@ def bug_detail(request, bug_id):
     return render(request, 'tracker/bug_detail.html', context)
 
 @login_required
+def project_view(request, project_id):
+    user_org = request.user.userprofile.organization
+    project = get_object_or_404(Project, id=project_id, organization=user_org)
+    bugs = Bug.objects.filter(project=project, organization=user_org).order_by('-created_at')
+    return render(request, 'tracker/project_detail.html', {
+        'project': project,
+        'bugs': bugs
+    })
+
+@login_required
 def create_bug(request):
     if request.method == 'POST':
         form = BugForm(request.POST)
