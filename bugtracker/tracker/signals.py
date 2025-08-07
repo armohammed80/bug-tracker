@@ -3,7 +3,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.db.utils import OperationalError
 from django.apps import apps
 
-def create_roles_and_permissions():
+def create_group_permissions():
     try:
         Bug = apps.get_model('tracker', 'Bug')
         Project = apps.get_model('tracker', 'Project')

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Redirecting user to registration page if they don't have a UserProfile">
-      <change afterPath="$PROJECT_DIR$/bugtracker/tracker/signals.py" afterDir="false" />
+    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Adding admins to user roles">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bugtracker/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/apps.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +265,39 @@
       <option name="project" value="LOCAL" />
       <updated>1754549421166</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Automatically assign groups permissions to groups">
+      <option name="closed" value="true" />
+      <created>1754549880936</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1754549880936</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Migration: Adding a `is_admin` field to UserProfile">
+      <option name="closed" value="true" />
+      <created>1754550131498</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1754550131498</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Adding admins to user roles">
+      <option name="closed" value="true" />
+      <created>1754550237025</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1754550237026</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Adding admins to user roles">
+      <option name="closed" value="true" />
+      <created>1754554186816</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1754554186816</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -301,6 +331,9 @@
     <MESSAGE value="Re-ˆmigrating" />
     <MESSAGE value="Fixing HTML code" />
     <MESSAGE value="Redirecting user to registration page if they don't have a UserProfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redirecting user to registration page if they don't have a UserProfile" />
+    <MESSAGE value="Automatically assign groups permissions to groups" />
+    <MESSAGE value="Migration: Adding a `is_admin` field to UserProfile" />
+    <MESSAGE value="Adding admins to user roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding admins to user roles" />
   </component>
 </project>

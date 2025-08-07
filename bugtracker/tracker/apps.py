@@ -6,5 +6,5 @@ class TrackerConfig(AppConfig):
     name = 'tracker'
 
     def ready(self):
-        from .signals import create_roles_and_permissions
-        create_roles_and_permissions()
+        from .signals import create_group_permissions
+        create_group_permissions()

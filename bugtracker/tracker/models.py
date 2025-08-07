@@ -11,6 +11,7 @@ class Organization(models.Model):
         return self.name
 
 
+# Aided by ChatGPT:
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     organization = models.ForeignKey(Organization, on_delete=models.CASCADE)
