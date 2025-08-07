@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Re-ˆmigrating">
+    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Fixing HTML code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bugtracker/tracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,22 +26,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN"
+      &quot;state&quot;: &quot;OPEN&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/armohammed80/bug-tracker.git",
-    "accountId": "79176677-6ac8-4478-9b73-e8e5024aa71e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/armohammed80/bug-tracker.git&quot;,
+    &quot;accountId&quot;: &quot;79176677-6ac8-4478-9b73-e8e5024aa71e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -54,15 +51,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python.Run Application.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.Run Application.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/bugtracker/tracker/static/tracker/css" />
@@ -253,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754501436236</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Fixing HTML code">
+      <option name="closed" value="true" />
+      <created>1754548704278</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1754548704278</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,6 +290,7 @@
     <MESSAGE value="Add ability to navigate to the bug details" />
     <MESSAGE value="Implementing organizations where users can only see projects and bugs created by users in their organization" />
     <MESSAGE value="Re-ˆmigrating" />
-    <option name="LAST_COMMIT_MESSAGE" value="Re-ˆmigrating" />
+    <MESSAGE value="Fixing HTML code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing HTML code" />
   </component>
 </project>

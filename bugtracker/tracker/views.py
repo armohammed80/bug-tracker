@@ -9,7 +9,11 @@ from django.contrib.auth import login
 
 @login_required
 def dashboard(request):
-    user_org = request.user.userprofile.organization
+    try:
+        user_org = request.user.userprofile.organization
+    except UserProfile.DoesNotExist:
+        return redirect('register')
+
     bugs = Bug.objects.filter(organization=user_org).order_by('-created_at')
     return render(request, 'tracker/dashboard.html', {'bugs': bugs})
 
