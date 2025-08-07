@@ -1,6 +1,6 @@
+from django.db.utils import OperationalError, ProgrammingError
 from django.contrib.contenttypes.models import ContentType
 from django.contrib.auth.models import Group, Permission
-from django.db.utils import OperationalError
 from django.apps import apps
 
 def create_group_permissions():
@@ -35,5 +35,5 @@ def create_group_permissions():
                     except Permission.DoesNotExist:
                         print(f"Permission {codename} not found.")
 
-    except OperationalError:
+    except (OperationalError, ProgrammingError):
         pass

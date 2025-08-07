@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Added color-coding based on severity in dashboard" />
+    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Remmove extra whitespace">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/bugtracker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/bugtracker/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -391,7 +396,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754596431283</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Remmove extra whitespace">
+      <option name="closed" value="true" />
+      <created>1754596470203</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1754596470203</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -406,7 +419,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create all html files" />
     <MESSAGE value="Create validation for html forms" />
     <MESSAGE value="Create login.html" />
     <MESSAGE value="Create static files" />
@@ -431,6 +443,7 @@
     <MESSAGE value="Adding the option to update status of bug" />
     <MESSAGE value="Added color-coding based on severity in dashboard" />
     <MESSAGE value="The project name in project_list is now a hyperlink to a table containing all the bugs to the project.&#10;&#10;(cherry picked from commit f9bee65a0eb5db01dac4a22312244b3419974221)" />
-    <option name="LAST_COMMIT_MESSAGE" value="The project name in project_list is now a hyperlink to a table containing all the bugs to the project.&#10;&#10;(cherry picked from commit f9bee65a0eb5db01dac4a22312244b3419974221)" />
+    <MESSAGE value="Remmove extra whitespace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remmove extra whitespace" />
   </component>
 </project>
