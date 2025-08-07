@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Ensure no redirection to administration page after logging out">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Logging out user before redirecting them to registration">
       <change beforePath="$PROJECT_DIR$/bugtracker/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,7 +312,39 @@
       <option name="project" value="LOCAL" />
       <updated>1754555064106</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Ensure no redirection to administration page after logging out">
+      <option name="closed" value="true" />
+      <created>1754555639404</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1754555639404</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Appkying style to bug_form.html">
+      <option name="closed" value="true" />
+      <created>1754555660406</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1754555660406</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Removing db.sqlite3 from git">
+      <option name="closed" value="true" />
+      <created>1754557928587</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1754557928587</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Logging out user before redirecting them to registration">
+      <option name="closed" value="true" />
+      <created>1754558017540</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1754558017540</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -330,7 +359,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial Commit" />
     <MESSAGE value="Setup Admin (for managing models)" />
     <MESSAGE value="Create a basic frontpage for application + URL routing" />
     <MESSAGE value="Create a basic login page for users." />
@@ -353,6 +381,9 @@
     <MESSAGE value="Migration: Adding a `is_admin` field to UserProfile" />
     <MESSAGE value="Adding admins to user roles" />
     <MESSAGE value="Ensure no redirection to administration page after logging out" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ensure no redirection to administration page after logging out" />
+    <MESSAGE value="Appkying style to bug_form.html" />
+    <MESSAGE value="Removing db.sqlite3 from git" />
+    <MESSAGE value="Logging out user before redirecting them to registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Logging out user before redirecting them to registration" />
   </component>
 </project>

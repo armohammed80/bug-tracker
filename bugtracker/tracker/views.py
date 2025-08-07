@@ -3,8 +3,8 @@ from .models import Bug, Project, Organization, UserProfile
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from .forms import BugForm, CommentForm, ProjectForm
+from django.contrib.auth import login, logout
 from django.contrib.auth.models import Group
-from django.contrib.auth import login
 
 
 @login_required
@@ -12,6 +12,7 @@ def dashboard(request):
     try:
         user_org = request.user.userprofile.organization
     except UserProfile.DoesNotExist:
+        logout(request)
         return redirect('register')
 
     bugs = Bug.objects.filter(organization=user_org).order_by('-created_at')
@@ -110,7 +111,6 @@ def register(request):
             is_admin = (role == "Admin")
             UserProfile.objects.create(user=user, organization=organization, is_admin=is_admin)
 
-            # Assign group
             try:
                 group = Group.objects.get(name=role)
                 user.groups.add(group)
