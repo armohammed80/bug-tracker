@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Logging out user before redirecting them to registration">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bugtracker/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754558017540</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Logging out user before redirecting them to registration">
+      <option name="closed" value="true" />
+      <created>1754558395733</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1754558395733</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

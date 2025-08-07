@@ -108,8 +108,7 @@ def register(request):
                     'organizations': organizations
                 })
 
-            is_admin = (role == "Admin")
-            UserProfile.objects.create(user=user, organization=organization, is_admin=is_admin)
+            UserProfile.objects.create(user=user, organization=organization)
 
             try:
                 group = Group.objects.get(name=role)

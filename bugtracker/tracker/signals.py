@@ -1,5 +1,5 @@
-from django.contrib.auth.models import Group, Permission
 from django.contrib.contenttypes.models import ContentType
+from django.contrib.auth.models import Group, Permission
 from django.db.utils import OperationalError
 from django.apps import apps
 
@@ -8,8 +8,6 @@ def create_group_permissions():
         Bug = apps.get_model('tracker', 'Bug')
         Project = apps.get_model('tracker', 'Project')
         Comment = apps.get_model('tracker', 'Comment')
-        UserProfile = apps.get_model('tracker', 'UserProfile')
-        Organization = apps.get_model('tracker', 'Organization')
 
         models_permissions = {
             'Developer': {
@@ -21,13 +19,6 @@ def create_group_permissions():
                 Bug: ['view', 'add'],
                 Comment: ['view', 'add'],
                 Project: ['view'],
-            },
-            'Admin': {
-                Bug: ['view', 'add', 'change', 'delete'],
-                Comment: ['view', 'add', 'change', 'delete'],
-                Project: ['view', 'add', 'change', 'delete'],
-                UserProfile: ['view'],
-                Organization: ['view'],
             }
         }
 
