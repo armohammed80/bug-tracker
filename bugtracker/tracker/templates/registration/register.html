@@ -4,7 +4,7 @@
 <div class="row justify-content-center">
   <div class="col-md-6">
     <h2 class="mb-4">Register</h2>
-    <form method="post" class="border p-4 rounded bg-light shadow-sm">
+    <form method="post" class="border p-4 rounded bg-light shadow-sm" action="{% url 'register' %}?next=/">
       {% csrf_token %}
 
       <div class="mb-3">
