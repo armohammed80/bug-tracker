@@ -27,6 +27,12 @@ def bug_detail(request, bug_id):
 
     if request.method == 'POST':
         form = CommentForm(request.POST)
+        if 'status' in request.POST:
+            new_status = request.POST['status']
+            if new_status in dict(Bug.STATUS_CHOICES):
+                bug.status = new_status
+                bug.save()
+                return redirect('bug_detail', bug_id=bug.id)
         if form.is_valid():
             comment = form.save(commit=False)
             comment.bug = bug
@@ -40,6 +46,7 @@ def bug_detail(request, bug_id):
         'bug': bug,
         'comments': comments,
         'comment_form': form,
+        'status_choices': Bug.STATUS_CHOICES,
     }
     return render(request, 'tracker/bug_detail.html', context)
 

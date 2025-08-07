@@ -7,7 +7,16 @@
 
     <p><strong>Project:</strong> {{ bug.project.name }}</p>
     <p><strong>Description:</strong> {{ bug.description }}</p>
-    <p><strong>Status:</strong> {{ bug.status }}</p>
+    <form method="post" class="mb-3 d-flex align-items-center">
+        {% csrf_token %}
+        <label for="status" class="form-label me-2"><strong>Status:</strong></label>
+        <select name="status" id="status" class="form-select w-auto me-2">
+            {% for key, value in status_choices %}
+                <option value="{{ key }}" {% if bug.status == key %}selected{% endif %}>{{ value }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit" class="btn btn-sm btn-outline-primary">Update</button>
+    </form>
     <p><strong>Severity:</strong> {{ bug.severity }}</p>
     <p><strong>Assigned to:</strong> {{ bug.assigned_to }}</p>
     <p>
