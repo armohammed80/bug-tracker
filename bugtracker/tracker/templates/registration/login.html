@@ -4,9 +4,28 @@
 <div class="row justify-content-center">
     <div class="col-md-4 form-container">
         <h2 class="mb-3">Login</h2>
-        <form method="post">
+        {% if form.errors %}
+            <div class="alert alert-danger">
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <div>{{ error }}</div>
+                    {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                    <div>{{ error }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        <form method="post" action="{% url 'login' %}?next=/">
             {% csrf_token %}
-            {{ form.as_p }}
+            <div class="mb-3">
+                {{ form.username.label_tag }}
+                {{ form.username }}
+            </div>
+            <div class="mb-3">
+                {{ form.password.label_tag }}
+                {{ form.password }}
+            </div>
             <button type="submit" class="btn btn-primary">Log In</button>
         </form>
     </div>

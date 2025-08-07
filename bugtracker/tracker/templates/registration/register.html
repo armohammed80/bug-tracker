@@ -1,27 +1,68 @@
 {% extends "tracker/base.html" %}
 {% block title %}Register{% endblock %}
 {% block content %}
-<h2>Register</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <h2 class="mb-4">Register</h2>
+    <form method="post" class="border p-4 rounded bg-light shadow-sm">
+      {% csrf_token %}
 
-    <label for="org_choice">Join Organization:</label>
-    <select name="org_choice" class="form-select mb-2">
-        {% for org in organizations %}
+      <div class="mb-3">
+        {{ form.username.label_tag }}
+        {{ form.username }}
+        {% if form.username.errors %}
+          <div class="text-danger small">{{ form.username.errors }}</div>
+        {% endif %}
+      </div>
+
+      <div class="mb-3">
+        {{ form.email.label_tag }}
+        {{ form.email }}
+        {% if form.email.errors %}
+          <div class="text-danger small">{{ form.email.errors }}</div>
+        {% endif %}
+      </div>
+
+      <div class="mb-3">
+        {{ form.password1.label_tag }}
+        {{ form.password1 }}
+        {% if form.password1.errors %}
+          <div class="text-danger small">{{ form.password1.errors }}</div>
+        {% endif %}
+      </div>
+
+      <div class="mb-3">
+        {{ form.password2.label_tag }}
+        {{ form.password2 }}
+        {% if form.password2.errors %}
+          <div class="text-danger small">{{ form.password2.errors }}</div>
+        {% endif %}
+      </div>
+
+      <div class="mb-3">
+        <label for="org_choice">Join Organization:</label>
+        <select name="org_choice" class="form-select">
+          {% for org in organizations %}
             <option value="{{ org.id }}">{{ org.name }}</option>
-        {% endfor %}
-    </select>
+          {% endfor %}
+        </select>
+      </div>
 
-    <label for="new_org">Or create a new one:</label>
-    <input type="text" name="new_org" class="form-control mb-3" placeholder="New organization name">
+      <div class="mb-3">
+        <label for="new_org">Or create a new one:</label>
+        <input type="text" name="new_org" class="form-control" placeholder="New organization name">
+      </div>
 
-    <label for="role">Account Type:</label>
-    <select name="role" class="form-select mb-3">
-        <option value="Developer">Developer</option>
-        <option value="Tester">Tester</option>
-    </select>
+      <div class="mb-4">
+        <label for="role">Account Type:</label>
+        <select name="role" class="form-select">
+          <option value="Developer">Developer</option>
+          <option value="Tester">Tester</option>
+        </select>
+      </div>
 
-    <button type="submit" class="btn btn-primary">Register</button>
-</form>
+      <button type="submit" class="btn btn-primary w-100">Register</button>
+    </form>
+  </div>
+</div>
 {% endblock %}
