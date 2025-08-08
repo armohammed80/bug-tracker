@@ -11,12 +11,12 @@
                 {{ field }}
                 {% if field.errors %}
                     <div class="alert alert-danger p-2 mt-1">
-                        {{ field.errors }}
+                        {{ field.errors|striptags }}
                     </div>
                 {% endif %}
             </div>
         {% endfor %}
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="submit" class="btn btn-success">Create</button>
     </form>
 </div>
 {% endblock %}

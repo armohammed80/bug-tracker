@@ -11,7 +11,7 @@
         {{ form.username.label_tag }}
         {{ form.username }}
         {% if form.username.errors %}
-          <div class="text-danger small">{{ form.username.errors }}</div>
+          <div class="alert alert-danger">{{ form.username.errors }}</div>
         {% endif %}
       </div>
 
@@ -19,7 +19,7 @@
         {{ form.email.label_tag }}
         {{ form.email }}
         {% if form.email.errors %}
-          <div class="text-danger small">{{ form.email.errors }}</div>
+          <div class="alert alert-danger">{{ form.email.errors }}</div>
         {% endif %}
       </div>
 
@@ -27,7 +27,7 @@
         {{ form.password1.label_tag }}
         {{ form.password1 }}
         {% if form.password1.errors %}
-          <div class="text-danger small">{{ form.password1.errors }}</div>
+          <div class="alert alert-danger">{{ form.password1.errors }}</div>
         {% endif %}
       </div>
 
@@ -35,13 +35,13 @@
         {{ form.password2.label_tag }}
         {{ form.password2 }}
         {% if form.password2.errors %}
-          <div class="text-danger small">{{ form.password2.errors }}</div>
+          <div class="alert alert-danger">{{ form.password2.errors }}</div>
         {% endif %}
       </div>
 
       <div class="mb-3">
         <label for="org_choice">Join Organization:</label>
-        <select name="org_choice" class="form-select">
+        <select name="org_choice" id="org_choice" class="form-select">
           {% for org in organizations %}
             <option value="{{ org.id }}">{{ org.name }}</option>
           {% endfor %}
@@ -50,12 +50,12 @@
 
       <div class="mb-3">
         <label for="new_org">Or create a new one:</label>
-        <input type="text" name="new_org" class="form-control" placeholder="New organization name">
+        <input type="text" name="new_org" id="new_org" class="form-control" placeholder="New organization name">
       </div>
 
       <div class="mb-4">
         <label for="role">Account Type:</label>
-        <select name="role" class="form-select">
+        <select name="role" id="role" class="form-select">
           <option value="Developer">Developer</option>
           <option value="Tester">Tester</option>
         </select>
