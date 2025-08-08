@@ -1,6 +1,6 @@
 # Bug Tracker Project
 
-#### Video Demo: https://your-video-url-here.com
+#### Video Demo: 
 
 #### Description:
 
