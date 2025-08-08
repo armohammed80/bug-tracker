@@ -55,8 +55,7 @@
         {% csrf_token %}
         {% for field in comment_form %}
             <div class="mb-3">
-                <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}</label>
-                <textarea name="{{ field.name }}" id="{{ field.id_for_label }}" placeholder="Your comment..." class="form-control"></textarea>
+                <textarea name="{{ field.name }}" placeholder="Your comment..." class="form-control"></textarea>
             </div>
             {% if field.errors %}
                 <div class="alert alert-danger p-2 mt-1">

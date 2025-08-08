@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Remove unecessary files">
+    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Adding badge next to the 'Assigned to' user in bug detail.">
       <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,14 +83,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754477012590</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Initial Commit">
-      <option name="closed" value="true" />
-      <created>1754477339681</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1754477339681</updated>
     </task>
     <task id="LOCAL-00002" summary="Setup Admin (for managing models)">
       <option name="closed" value="true" />
@@ -476,7 +468,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754663306214</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Adding badge next to the 'Assigned to' user in bug detail.">
+      <option name="closed" value="true" />
+      <created>1754663535695</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1754663535698</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -491,7 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Implementing organizations where users can only see projects and bugs created by users in their organization" />
     <MESSAGE value="Re-ˆmigrating" />
     <MESSAGE value="Redirecting user to registration page if they don't have a UserProfile" />
     <MESSAGE value="Automatically assign groups permissions to groups" />
@@ -516,6 +515,7 @@
     <MESSAGE value="Fixing the issue where comments couldn't be posted." />
     <MESSAGE value="Improving README.md" />
     <MESSAGE value="Remove unecessary files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove unecessary files" />
+    <MESSAGE value="Adding badge next to the 'Assigned to' user in bug detail." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding badge next to the 'Assigned to' user in bug detail." />
   </component>
 </project>
