@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Fixing HTML code">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/project_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/project_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -421,7 +418,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754629175104</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Fixing HTML code">
+      <option name="closed" value="true" />
+      <created>1754633622018</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1754633622018</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -436,7 +441,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create login.html" />
     <MESSAGE value="Create static files" />
     <MESSAGE value="Update backend to render all html files" />
     <MESSAGE value="Create url paths for all html files" />
@@ -460,6 +464,7 @@
     <MESSAGE value="The project name in project_list is now a hyperlink to a table containing all the bugs to the project.&#10;&#10;(cherry picked from commit f9bee65a0eb5db01dac4a22312244b3419974221)" />
     <MESSAGE value="Remmove extra whitespace" />
     <MESSAGE value="Migrating to PostgreSQL" />
+    <MESSAGE value="Adding Bootstrap to Forms" />
     <MESSAGE value="Fixing HTML code" />
     <option name="LAST_COMMIT_MESSAGE" value="Fixing HTML code" />
   </component>
