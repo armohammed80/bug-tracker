@@ -18,7 +18,10 @@
         <button type="submit" class="btn btn-sm btn-outline-primary">Update</button>
     </form>
     <p><strong>Severity:</strong> {{ bug.severity }}</p>
-    <p><strong>Assigned to:</strong> {{ bug.assigned_to }}</p>
+    <p>
+        <strong>Assigned to:</strong> {{ bug.assigned_to }}
+         <span class="badge bg-secondary">{{ bug.assigned_to.groups.first.name|default:"Unassigned" }}</span>
+    </p>
     <p>
         <strong>Created by:</strong> {{ bug.created_by.username }}
         <span class="badge bg-secondary">{{ bug.created_by.groups.first.name|default:"Unassigned" }}</span>

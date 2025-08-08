@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Fix README.md">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Remove unecessary files">
       <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -454,7 +452,31 @@
       <option name="project" value="LOCAL" />
       <updated>1754663006825</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Fixing the issue where comments couldn't be posted.">
+      <option name="closed" value="true" />
+      <created>1754663267868</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1754663267868</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Improving README.md">
+      <option name="closed" value="true" />
+      <created>1754663276314</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1754663276314</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Remove unecessary files">
+      <option name="closed" value="true" />
+      <created>1754663306214</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1754663306214</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -469,9 +491,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add registration" />
-    <MESSAGE value="Fix comments to reflect the role of user" />
-    <MESSAGE value="Add ability to navigate to the bug details" />
     <MESSAGE value="Implementing organizations where users can only see projects and bugs created by users in their organization" />
     <MESSAGE value="Re-ˆmigrating" />
     <MESSAGE value="Redirecting user to registration page if they don't have a UserProfile" />
@@ -494,6 +513,9 @@
     <MESSAGE value="Create README.md" />
     <MESSAGE value="Fix README.md" />
     <MESSAGE value="Adding future improvements to README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding future improvements to README.md" />
+    <MESSAGE value="Fixing the issue where comments couldn't be posted." />
+    <MESSAGE value="Improving README.md" />
+    <MESSAGE value="Remove unecessary files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove unecessary files" />
   </component>
 </project>
