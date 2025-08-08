@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Fixing HTML code">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Fix README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +43,9 @@
     &quot;accountId&quot;: &quot;79176677-6ac8-4478-9b73-e8e5024aa71e&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.venv/lib/python3.12/site-packages/django/forms/widgets.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -426,7 +430,31 @@
       <option name="project" value="LOCAL" />
       <updated>1754633622018</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Create README.md">
+      <option name="closed" value="true" />
+      <created>1754660743909</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1754660743909</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Fix README.md">
+      <option name="closed" value="true" />
+      <created>1754660792315</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1754660792315</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Adding future improvements to README.md">
+      <option name="closed" value="true" />
+      <created>1754663006825</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1754663006825</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,9 +469,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Create static files" />
-    <MESSAGE value="Update backend to render all html files" />
-    <MESSAGE value="Create url paths for all html files" />
     <MESSAGE value="Add registration" />
     <MESSAGE value="Fix comments to reflect the role of user" />
     <MESSAGE value="Add ability to navigate to the bug details" />
@@ -466,6 +491,9 @@
     <MESSAGE value="Migrating to PostgreSQL" />
     <MESSAGE value="Adding Bootstrap to Forms" />
     <MESSAGE value="Fixing HTML code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing HTML code" />
+    <MESSAGE value="Create README.md" />
+    <MESSAGE value="Fix README.md" />
+    <MESSAGE value="Adding future improvements to README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding future improvements to README.md" />
   </component>
 </project>
