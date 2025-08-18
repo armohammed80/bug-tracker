@@ -4,35 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="Adding badge next to the 'Assigned to' user in bug detail.">
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" afterDir="false" />
+    <list default="true" id="56253d60-3c78-4cbc-8436-98306e1a2e92" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/static/tracker/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/static/tracker/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
-  &quot;history&quot;: [
-    {
-      &quot;state&quot;: &quot;OPEN&quot;
-    }
-  ],
   &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;armohammed80&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">{
@@ -41,32 +28,47 @@
     &quot;accountId&quot;: &quot;79176677-6ac8-4478-9b73-e8e5024aa71e&quot;
   }
 }</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/.venv/lib/python3.12/site-packages/django/forms/widgets.py" root0="SKIP_INSPECTION" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="30uUaAk3GJswJpNCDkxgrYUv7h1" />
+  <component name="ProjectId" id="312qAaoHm86VtiyCt58n5DGmWAE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python.Run Application.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.Run Server.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/bugtracker/tracker/static/tracker/css" />
-      <recent name="$PROJECT_DIR$/bugtracker/tracker/templates/tracker" />
-    </key>
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Run Server" type="PythonConfigurationType" factoryName="Python">
+      <module name="bug_tracker_final_project" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (bug_tracker_final_project)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bugtracker/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -78,405 +80,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="addadf7f-57cb-416e-9d53-6338940ef5d2" name="Changes" comment="" />
-      <created>1754477012590</created>
+      <changelist id="56253d60-3c78-4cbc-8436-98306e1a2e92" name="Changes" comment="" />
+      <created>1754732372677</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1754477012590</updated>
+      <updated>1754732372677</updated>
     </task>
-    <task id="LOCAL-00002" summary="Setup Admin (for managing models)">
-      <option name="closed" value="true" />
-      <created>1754478558550</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1754478558550</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Create a basic frontpage for application + URL routing">
-      <option name="closed" value="true" />
-      <created>1754479247675</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1754479247675</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Create a basic login page for users.">
-      <option name="closed" value="true" />
-      <created>1754482894257</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1754482894257</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Create a simple dashboard">
-      <option name="closed" value="true" />
-      <created>1754482913025</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1754482913025</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Create a base.html as template for all html files">
-      <option name="closed" value="true" />
-      <created>1754485898363</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1754485898363</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Create all html files">
-      <option name="closed" value="true" />
-      <created>1754485918866</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1754485918866</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Create all html files">
-      <option name="closed" value="true" />
-      <created>1754485924931</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1754485924931</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Create validation for html forms">
-      <option name="closed" value="true" />
-      <created>1754485994532</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1754485994532</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Create login.html">
-      <option name="closed" value="true" />
-      <created>1754486015878</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1754486015878</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Create static files">
-      <option name="closed" value="true" />
-      <created>1754486029149</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1754486029149</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Update backend to render all html files">
-      <option name="closed" value="true" />
-      <created>1754486058160</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1754486058160</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Create url paths for all html files">
-      <option name="closed" value="true" />
-      <created>1754486076577</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1754486076577</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Add registration">
-      <option name="closed" value="true" />
-      <created>1754487554538</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1754487554538</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Add registration">
-      <option name="closed" value="true" />
-      <created>1754487561510</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1754487561510</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Fix comments to reflect the role of user">
-      <option name="closed" value="true" />
-      <created>1754487618862</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1754487618862</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Fix comments to reflect the role of user">
-      <option name="closed" value="true" />
-      <created>1754487624767</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1754487624767</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Add ability to navigate to the bug details">
-      <option name="closed" value="true" />
-      <created>1754487678548</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1754487678548</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Add ability to navigate to the bug details">
-      <option name="closed" value="true" />
-      <created>1754491109817</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1754491109817</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Implementing organizations where users can only see projects and bugs created by users in their organization">
-      <option name="closed" value="true" />
-      <created>1754501160379</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1754501160379</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Re-ˆmigrating">
-      <option name="closed" value="true" />
-      <created>1754501436236</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1754501436236</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Fixing HTML code">
-      <option name="closed" value="true" />
-      <created>1754548704278</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1754548704278</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Redirecting user to registration page if they don't have a UserProfile">
-      <option name="closed" value="true" />
-      <created>1754549421166</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1754549421166</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Automatically assign groups permissions to groups">
-      <option name="closed" value="true" />
-      <created>1754549880936</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1754549880936</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Migration: Adding a `is_admin` field to UserProfile">
-      <option name="closed" value="true" />
-      <created>1754550131498</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1754550131498</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Adding admins to user roles">
-      <option name="closed" value="true" />
-      <created>1754550237025</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1754550237026</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Adding admins to user roles">
-      <option name="closed" value="true" />
-      <created>1754554186816</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1754554186816</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Adding admins to user roles">
-      <option name="closed" value="true" />
-      <created>1754554500265</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1754554500265</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Ensure no redirection to administration page after logging out">
-      <option name="closed" value="true" />
-      <created>1754555064106</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1754555064106</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Ensure no redirection to administration page after logging out">
-      <option name="closed" value="true" />
-      <created>1754555639404</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1754555639404</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Appkying style to bug_form.html">
-      <option name="closed" value="true" />
-      <created>1754555660406</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1754555660406</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Removing db.sqlite3 from git">
-      <option name="closed" value="true" />
-      <created>1754557928587</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1754557928587</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Logging out user before redirecting them to registration">
-      <option name="closed" value="true" />
-      <created>1754558017540</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1754558017540</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Logging out user before redirecting them to registration">
-      <option name="closed" value="true" />
-      <created>1754558395733</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1754558395733</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Removed 'Admin' role">
-      <option name="closed" value="true" />
-      <created>1754558815976</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1754558815976</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Migration: Removing `is_admin` from UserProfile">
-      <option name="closed" value="true" />
-      <created>1754558900972</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1754558900972</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Adding the option to update status of bug">
-      <option name="closed" value="true" />
-      <created>1754595344522</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1754595344522</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Added color-coding based on severity in dashboard">
-      <option name="closed" value="true" />
-      <created>1754595590762</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1754595590762</updated>
-    </task>
-    <task id="LOCAL-00039" summary="The project name in project_list is now a hyperlink to a table containing all the bugs to the project.&#10;&#10;(cherry picked from commit f9bee65a0eb5db01dac4a22312244b3419974221)">
-      <option name="closed" value="true" />
-      <created>1754596431283</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1754596431283</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Remmove extra whitespace">
-      <option name="closed" value="true" />
-      <created>1754596470203</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1754596470203</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Migrating to PostgreSQL">
-      <option name="closed" value="true" />
-      <created>1754597377386</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1754597377386</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Fixing HTML code">
-      <option name="closed" value="true" />
-      <created>1754629175104</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1754629175104</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Fixing HTML code">
-      <option name="closed" value="true" />
-      <created>1754633622018</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1754633622018</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Create README.md">
-      <option name="closed" value="true" />
-      <created>1754660743909</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1754660743909</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Fix README.md">
-      <option name="closed" value="true" />
-      <created>1754660792315</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1754660792315</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Adding future improvements to README.md">
-      <option name="closed" value="true" />
-      <created>1754663006825</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1754663006825</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Fixing the issue where comments couldn't be posted.">
-      <option name="closed" value="true" />
-      <created>1754663267868</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1754663267868</updated>
-    </task>
-    <task id="LOCAL-00048" summary="Improving README.md">
-      <option name="closed" value="true" />
-      <created>1754663276314</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1754663276314</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Remove unecessary files">
-      <option name="closed" value="true" />
-      <created>1754663306214</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1754663306214</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Adding badge next to the 'Assigned to' user in bug detail.">
-      <option name="closed" value="true" />
-      <created>1754663535695</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1754663535698</updated>
-    </task>
-    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -484,38 +93,22 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Re-ˆmigrating" />
-    <MESSAGE value="Redirecting user to registration page if they don't have a UserProfile" />
-    <MESSAGE value="Automatically assign groups permissions to groups" />
-    <MESSAGE value="Migration: Adding a `is_admin` field to UserProfile" />
-    <MESSAGE value="Adding admins to user roles" />
-    <MESSAGE value="Ensure no redirection to administration page after logging out" />
-    <MESSAGE value="Appkying style to bug_form.html" />
-    <MESSAGE value="Removing db.sqlite3 from git" />
-    <MESSAGE value="Logging out user before redirecting them to registration" />
-    <MESSAGE value="Removed 'Admin' role" />
-    <MESSAGE value="Migration: Removing `is_admin` from UserProfile" />
-    <MESSAGE value="Adding the option to update status of bug" />
-    <MESSAGE value="Added color-coding based on severity in dashboard" />
-    <MESSAGE value="The project name in project_list is now a hyperlink to a table containing all the bugs to the project.&#10;&#10;(cherry picked from commit f9bee65a0eb5db01dac4a22312244b3419974221)" />
-    <MESSAGE value="Remmove extra whitespace" />
-    <MESSAGE value="Migrating to PostgreSQL" />
-    <MESSAGE value="Adding Bootstrap to Forms" />
-    <MESSAGE value="Fixing HTML code" />
-    <MESSAGE value="Create README.md" />
-    <MESSAGE value="Fix README.md" />
-    <MESSAGE value="Adding future improvements to README.md" />
-    <MESSAGE value="Fixing the issue where comments couldn't be posted." />
-    <MESSAGE value="Improving README.md" />
-    <MESSAGE value="Remove unecessary files" />
-    <MESSAGE value="Adding badge next to the 'Assigned to' user in bug detail." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding badge next to the 'Assigned to' user in bug detail." />
   </component>
 </project>

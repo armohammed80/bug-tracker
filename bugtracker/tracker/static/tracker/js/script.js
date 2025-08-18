@@ -1,16 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.querySelector('form');
-  if (form) {
-    const submitButton = form.querySelector('button[type="submit"]');
-    if (submitButton) {
-      form.addEventListener('submit', () => {
-        submitButton.disabled = true;
-        submitButton.innerText = 'Submitting...';
-      });
-    }
-  }
+// Show a "form submitted" alert
+document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', () => {
+        alert("Your changes have been submitted!");
+    });
+});
 
-  document.querySelectorAll('form input[required], form textarea[required]').forEach(input => {
-    input.classList.add('required-highlight');
-  });
+// Live character count for textareas
+document.querySelectorAll('textarea').forEach(textarea => {
+    const counter = document.createElement('small');
+    counter.style.display = 'block';
+    counter.style.marginTop = '0.25rem';
+    textarea.parentNode.insertBefore(counter, textarea.nextSibling);
+
+    textarea.addEventListener('input', () => {
+        counter.textContent = `${textarea.value.length} characters`;
+    });
 });
