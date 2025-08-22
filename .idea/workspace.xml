@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56253d60-3c78-4cbc-8436-98306e1a2e92" name="Changes" comment="Fix script.js" />
+    <list default="true" id="56253d60-3c78-4cbc-8436-98306e1a2e92" name="Changes" comment="Remove redundant navbar button.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/static/tracker/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/static/tracker/js/script.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755503690720</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Remove redundant navbar button.">
+      <option name="closed" value="true" />
+      <created>1755863804275</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1755863804275</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +131,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fix script.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix script.js" />
+    <MESSAGE value="Remove redundant navbar button." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove redundant navbar button." />
   </component>
 </project>
