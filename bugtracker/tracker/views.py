@@ -3,8 +3,8 @@ from .models import Bug, Project, Organization, UserProfile
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
 from .forms import BugForm, CommentForm, ProjectForm
+from django.contrib.auth.models import Group, User
 from django.contrib.auth import login, logout
-from django.contrib.auth.models import Group
 
 
 @login_required
@@ -33,6 +33,11 @@ def bug_detail(request, bug_id):
                 bug.status = new_status
                 bug.save()
                 return redirect('bug_detail', bug_id=bug.id)
+        if 'assigned_to' in request.POST:
+            if assigned_person := request.POST['assigned_to']:
+                bug.assigned_to = get_object_or_404(User, id=assigned_person, userprofile__organization=bug.organization)
+                bug.save()
+                return redirect('bug_detail', bug_id=bug.id)
         if form.is_valid():
             comment = form.save(commit=False)
             comment.bug = bug
@@ -47,6 +52,7 @@ def bug_detail(request, bug_id):
         'comments': comments,
         'comment_form': form,
         'status_choices': Bug.STATUS_CHOICES,
+        'users': User.objects.filter(userprofile__organization=bug.organization),
     }
     return render(request, 'tracker/bug_detail.html', context)
 

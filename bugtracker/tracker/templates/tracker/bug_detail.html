@@ -18,10 +18,30 @@
         <button type="submit" class="btn btn-sm btn-outline-primary">Update</button>
     </form>
     <p><strong>Severity:</strong> {{ bug.severity }}</p>
+    {% if user == bug.assigned_to %}
+    <form method="post" class="mb-3 d-flex align-items-center">
+        {% csrf_token %}
+        <label for="assigned_to" class="form-label me-2"><strong>Assigned to:</strong></label>
+        <select name="assigned_to" id="assigned_to" class="form-select w-auto me-2">
+            {% for u in users %}
+                <option value="{{ u.id }}" {% if bug.assigned_to and bug.assigned_to.id == u.id %}selected{% endif %}>
+                    {{ u.username }}
+                    {% if u.groups.first %}
+                        ({{ u.groups.first.name }})
+                    {% else %}
+                        (Unassigned)
+                    {% endif %}
+                </option>
+            {% endfor %}
+        </select>
+        <button type="submit" class="btn btn-sm btn-outline-primary">Re-assign</button>
+    </form>
+    {% else %}
     <p>
         <strong>Assigned to:</strong> {{ bug.assigned_to }}
-         <span class="badge bg-secondary">{{ bug.assigned_to.groups.first.name|default:"Unassigned" }}</span>
+        <span class="badge bg-secondary">{{ bug.assigned_to.groups.first.name|default:"Unassigned" }}</span>
     </p>
+    {% endif %}
     <p>
         <strong>Created by:</strong> {{ bug.created_by.username }}
         <span class="badge bg-secondary">{{ bug.created_by.groups.first.name|default:"Unassigned" }}</span>

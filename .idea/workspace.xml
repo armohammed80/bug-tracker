@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56253d60-3c78-4cbc-8436-98306e1a2e92" name="Changes" comment="Remove unnecessary alert.">
-      <change beforePath="$PROJECT_DIR$/.idea/bug_tracker_final_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bug_tracker_final_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/bugtracker/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/bugtracker/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="56253d60-3c78-4cbc-8436-98306e1a2e92" name="Changes" comment="The user the bug has been assigned to can re-assign it to another user.">
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,42 +21,35 @@
     &quot;assignee&quot;: &quot;armohammed80&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/armohammed80/bug-tracker.git",
-    "accountId": "f58eb34b-c2e3-4310-962a-a0b1471a1450"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/armohammed80/bug-tracker.git&quot;,
+    &quot;accountId&quot;: &quot;79176677-6ac8-4478-9b73-e8e5024aa71e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="312qAaoHm86VtiyCt58n5DGmWAE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Python.Run Application.executor": "Run",
     "Python.Run Server.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Atiq/PycharmProjects/bug-tracker",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Atiq\PycharmProjects\bug-tracker" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-b3d66beaba9a-c6efb3732140-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26199.168" />
+        <option value="bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29" />
       </set>
     </attachedChunks>
   </component>
@@ -97,15 +86,23 @@
       <option name="project" value="LOCAL" />
       <updated>1755863915029</updated>
     </task>
-    <task id="LOCAL-00004" summary="Use os.getenv instead of environ.get">
+    <task id="LOCAL-00004" summary="Make comments an optional feature (makes sure you can re-assign or update bug case without commenting).">
       <option name="closed" value="true" />
-      <created>1759507824621</created>
+      <created>1759512289119</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1759507824621</updated>
+      <updated>1759512289119</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="The user the bug has been assigned to can re-assign it to another user.">
+      <option name="closed" value="true" />
+      <created>1759512350426</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759512350426</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,7 +132,8 @@
     <MESSAGE value="Fix script.js" />
     <MESSAGE value="Remove redundant navbar button." />
     <MESSAGE value="Remove unnecessary alert." />
-    <MESSAGE value="Use os.getenv instead of environ.get" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use os.getenv instead of environ.get" />
+    <MESSAGE value="Make comments an optional feature (makes sure you can re-assign or update bug case without commenting)." />
+    <MESSAGE value="The user the bug has been assigned to can re-assign it to another user." />
+    <option name="LAST_COMMIT_MESSAGE" value="The user the bug has been assigned to can re-assign it to another user." />
   </component>
 </project>
