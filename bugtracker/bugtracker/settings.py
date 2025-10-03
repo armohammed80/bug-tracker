@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'bugtracker.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': environ.get('DB_NAME'),
-        'USER': environ.get('DB_USER'),
-        'PASSWORD': environ.get('DB_PASSWORD'),
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
         'HOST': 'localhost',
         'PORT': '5432',
     }
