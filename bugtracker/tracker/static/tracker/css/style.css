@@ -12,3 +12,55 @@ body {
 h2 {
     margin-bottom: 1rem;
 }
+
+/* Enhanced Dashboard Table Styling */
+.dashboard-table {
+    width: 100%;
+    border-collapse: separate; /* allow border-radius */
+    border-spacing: 0;
+    margin-top: 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Table hover effect */
+.dashboard-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05); /* subtle highlight */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    transform: translateY(-2px); /* lift row slightly */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* shadow under row */
+}
+
+.dashboard-table th,
+.dashboard-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* subtle line for dark table */
+}
+
+.dashboard-table th {
+    background-color: #343a40;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Rounded corners for first and last cells in header and footer */
+.dashboard-table thead th:first-child {
+    border-top-left-radius: 12px;
+}
+.dashboard-table thead th:last-child {
+    border-top-right-radius: 12px;
+}
+.dashboard-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 12px;
+}
+.dashboard-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 12px;
+}

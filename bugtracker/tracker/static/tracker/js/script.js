@@ -9,3 +9,19 @@ document.querySelectorAll('textarea').forEach(textarea => {
         counter.textContent = `${textarea.value.length} characters`;
     });
 });
+
+const filterSelect = document.getElementById('status-filter');
+if (filterSelect) {
+    filterSelect.addEventListener('change', () => {
+        const filterValue = filterSelect.value.toLowerCase();
+        document.querySelectorAll('.dashboard-table tbody tr').forEach(row => {
+            const statusCell = row.querySelector('.status-cell'); // Add this class in your HTML
+            if(!statusCell) return;
+            if(statusCell.textContent.toLowerCase().includes(filterValue) || filterValue === 'all') {
+                row.style.display = '';
+            } else {
+                row.style.display = 'none';
+            }
+        });
+    });
+}
