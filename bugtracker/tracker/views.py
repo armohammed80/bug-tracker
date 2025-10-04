@@ -1,11 +1,12 @@
+from .forms import BugForm, CommentForm, ProjectForm, CustomUserCreationForm
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib.auth import login, logout, get_user_model
 from .models import Bug, Project, Organization, UserProfile
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.forms import UserCreationForm
-from .forms import BugForm, CommentForm, ProjectForm
 from django.contrib.auth.models import Group, User
-from django.contrib.auth import login, logout
 
+
+User = get_user_model()
 
 @login_required
 def dashboard(request):
@@ -103,13 +104,13 @@ def create_project(request):
 
 def register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
         role = request.POST.get('role')
         org_choice = request.POST.get('org_choice')
         new_org_name = request.POST.get('new_org')
 
         if form.is_valid() and role:
-            user = form.save()
+            user = form.save(commit=False)
 
             if new_org_name:
                 organization, _ = Organization.objects.get_or_create(name=new_org_name.strip())
@@ -131,6 +132,10 @@ def register(request):
                     'organizations': organizations
                 })
 
+            # Set the required organization
+            user.organization = organization
+            user.save()
+
             UserProfile.objects.create(user=user, organization=organization)
 
             try:
@@ -147,7 +152,7 @@ def register(request):
             login(request, user)
             return redirect('dashboard')
     else:
-        form = UserCreationForm()
+        form = CustomUserCreationForm()
 
     organizations = Organization.objects.all()
     return render(request, 'registration/register.html', {

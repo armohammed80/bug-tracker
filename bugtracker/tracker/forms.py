@@ -1,5 +1,27 @@
+from django.contrib.auth.forms import UserCreationForm
+from .models import Bug, Comment, Project, User
 from django import forms
-from .models import Bug, Comment, Project
+
+
+class CustomUserCreationForm(UserCreationForm):
+    email = forms.EmailField(required=True)
+
+    class Meta:
+        model = User
+        fields = ("username", "email", "password1", "password2")
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field in self.fields.values():
+            field.widget.attrs.update({'class': 'form-control'})
+
+    def save(self, commit=True):
+        user = super().save(commit=False)
+        user.email = self.cleaned_data["email"]
+        if commit:
+            user.save()
+        return user
+
 
 class BugForm(forms.ModelForm):
     class Meta:

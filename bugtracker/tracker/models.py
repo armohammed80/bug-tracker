@@ -1,5 +1,6 @@
+from django.contrib.auth.models import AbstractUser
+from django.conf import settings
 from django.db import models
-from django.contrib.auth.models import User
 
 
 # Aided by ChatGPT:
@@ -11,9 +12,20 @@ class Organization(models.Model):
         return self.name
 
 
-# Aided by ChatGPT:
+class User(AbstractUser):
+    username = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+    organization = models.ForeignKey(Organization, on_delete=models.CASCADE)
+
+    USERNAME_FIELD = "email"
+    REQUIRED_FIELDS = ["username"]
+
+    class Meta:
+        unique_together = ("username", "organization")
+
+
 class UserProfile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     organization = models.ForeignKey(Organization, on_delete=models.CASCADE)
 
     def __str__(self):
@@ -23,7 +35,7 @@ class UserProfile(models.Model):
 class Project(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField(blank=True)
-    created_by = models.ForeignKey(User, on_delete=models.CASCADE)
+    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     organization = models.ForeignKey(Organization, on_delete=models.CASCADE)
 
     def __str__(self):
@@ -49,9 +61,9 @@ class Bug(models.Model):
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='Open')
     severity = models.CharField(max_length=20, choices=SEVERITY_CHOICES, default='Low')
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
-    assigned_to = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True,
+    assigned_to = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True, blank=True,
                                     related_name="assigned_bugs")
-    created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name="created_bugs")
+    created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="created_bugs")
     created_at = models.DateTimeField(auto_now_add=True)
     organization = models.ForeignKey(Organization, on_delete=models.CASCADE)
 
@@ -61,6 +73,6 @@ class Bug(models.Model):
 
 class Comment(models.Model):
     bug = models.ForeignKey(Bug, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)

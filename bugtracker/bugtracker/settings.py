@@ -14,7 +14,9 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 
+# Load environment variables using .env file.
 load_dotenv()
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -33,6 +35,13 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+
+AUTH_USER_MODEL = "tracker.User"
+
+AUTHENTICATION_BACKENDS = [
+    "tracker.backends.UsernameOrEmailBackend",
+#    "django.contrib.auth.backends.ModelBackend",
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',

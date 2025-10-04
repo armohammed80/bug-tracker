@@ -23,7 +23,11 @@
         {{ form.email.label_tag }}
         {{ form.email }}
         {% if form.email.errors %}
-          <div class="alert alert-danger">{{ form.email.errors }}</div>
+          <div class="alert alert-danger">
+            {% for err in form.email.errors %}
+              <div>{{ err }}</div>
+            {% endfor %}
+          </div>
         {% endif %}
       </div>
 
