@@ -13,9 +13,9 @@ class Organization(models.Model):
 
 
 class User(AbstractUser):
-    username = models.CharField(max_length=100)
+    username = models.CharField(max_length=100, unique=False)
     email = models.EmailField(unique=True)
-    organization = models.ForeignKey(Organization, on_delete=models.CASCADE)
+    organization = models.ForeignKey(Organization, on_delete=models.CASCADE, null=True)
 
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = ["username"]
