@@ -14,6 +14,7 @@ class Organization(models.Model):
 
 class User(AbstractUser):
     username = models.CharField(max_length=100, unique=False)
+    name = models.CharField(max_length=100, unique=True)
     email = models.EmailField(unique=True)
     organization = models.ForeignKey(Organization, on_delete=models.CASCADE, null=True)
 
