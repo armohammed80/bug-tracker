@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56253d60-3c78-4cbc-8436-98306e1a2e92" name="Changes" comment="Add name field to User model">
-      <change beforePath="$PROJECT_DIR$/.idea/bug_tracker_final_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bug_tracker_final_project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="56253d60-3c78-4cbc-8436-98306e1a2e92" name="Changes" comment="Extra Markups">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bugtracker/tracker/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/project_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/project_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1763123481949</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Extra Markups">
+      <option name="closed" value="true" />
+      <created>1764652723792</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1764652723792</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,6 +222,7 @@
     <MESSAGE value="Adding email field to user." />
     <MESSAGE value="Adding same styling of dashboard table and filter feature to the project-detail page." />
     <MESSAGE value="Fix code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix code" />
+    <MESSAGE value="Extra Markups" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extra Markups" />
   </component>
 </project>

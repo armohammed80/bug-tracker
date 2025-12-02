@@ -1,12 +1,10 @@
 from .forms import BugForm, CommentForm, ProjectForm, CustomUserCreationForm
+from .models import Bug, Project, Organization, UserProfile, User
 from django.shortcuts import render, redirect, get_object_or_404
-from django.contrib.auth import login, logout, get_user_model
-from .models import Bug, Project, Organization, UserProfile
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import Group, User
+from django.contrib.auth import login, logout
+from django.contrib.auth.models import Group
 
-
-User = get_user_model()
 
 @login_required
 def dashboard(request):

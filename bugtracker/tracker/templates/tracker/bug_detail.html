@@ -6,7 +6,7 @@
     <h2>{{ bug.title }}</h2>
 
     <p><strong>Project:</strong> {{ bug.project.name }}</p>
-    <p><strong>Description:</strong> {{ bug.description }}</p>
+    <p><strong>Description:</strong> <pre style="white-space: pre-wrap;">{{ bug.description }}</pre>
     <form method="post" class="mb-3 d-flex align-items-center">
         {% csrf_token %}
         <label for="status" class="form-label me-2"><strong>Status:</strong></label>
@@ -25,7 +25,7 @@
         <select name="assigned_to" id="assigned_to" class="form-select w-auto me-2">
             {% for u in users %}
                 <option value="{{ u.id }}" {% if bug.assigned_to and bug.assigned_to.id == u.id %}selected{% endif %}>
-                    {{ u.username }}
+                    {{ u.name }} - {{ u.username }}
                     {% if u.groups.first %}
                         ({{ u.groups.first.name }})
                     {% else %}
@@ -46,7 +46,7 @@
         <strong>Created by:</strong> {{ bug.created_by.username }}
         <span class="badge bg-secondary">{{ bug.created_by.groups.first.name|default:"Unassigned" }}</span>
     </p>
-    <p><strong>Created at:</strong> {{ bug.created_at }}</p>
+    <p><strong>Created at:</strong> {{ bug.created_at|date:"M d, Y H:i" }} UTC</p>
 
     <hr>
 
@@ -62,7 +62,7 @@
                         </span>
                         <p class="mb-1">{{ comment.content }}</p>
                     </div>
-                    <small class="text-muted">{{ comment.created_at|date:"M d, Y H:i" }}</small>
+                    <small class="text-muted">{{ comment.created_at|date:"M d, Y H:i" }} UTC</small>
                 </div>
             </li>
         {% empty %}
