@@ -4,7 +4,7 @@
 {% block content %}
 <div class="container mt-4">
     <h2>{{ project.name }}</h2>
-    <p>{{ project.description }}</p>
+    <pre style="white-space: pre-wrap;">{{ project.description }}</pre>
 
     <h4 class="mt-4">Bugs in this Project:</h4>
     {% if bugs %}

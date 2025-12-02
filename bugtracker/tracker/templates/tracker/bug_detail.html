@@ -6,7 +6,7 @@
     <h2>{{ bug.title }}</h2>
 
     <p><strong>Project:</strong> {{ bug.project.name }}</p>
-    <p><strong>Description:</strong> <pre style="white-space: pre-wrap;">{{ bug.description }}</pre>
+    <p> <strong>Description:</strong> <pre style="white-space: pre-wrap;">{{ bug.description }}</pre>
     <form method="post" class="mb-3 d-flex align-items-center">
         {% csrf_token %}
         <label for="status" class="form-label me-2"><strong>Status:</strong></label>

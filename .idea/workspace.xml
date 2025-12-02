@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="56253d60-3c78-4cbc-8436-98306e1a2e92" name="Changes" comment="Extra Markups">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/registration/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/bug_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/project_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/templates/tracker/project_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bugtracker/tracker/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bugtracker/tracker/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
