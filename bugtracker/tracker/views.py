@@ -2,19 +2,13 @@ from .forms import BugForm, CommentForm, ProjectForm, CustomUserCreationForm
 from .models import Bug, Project, Organization, UserProfile, User
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth import login, logout
 from django.contrib.auth.models import Group
+from django.contrib.auth import login
 
 
 @login_required
 def dashboard(request):
-    try:
-        user_org = request.user.userprofile.organization
-    except UserProfile.DoesNotExist:
-        logout(request)
-        return redirect('register')
-
-    bugs = Bug.objects.filter(organization=user_org).order_by('-created_at')
+    bugs = Bug.objects.order_by('-created_at')
     return render(request, 'tracker/dashboard.html', {'bugs': bugs})
 
 
@@ -59,7 +53,7 @@ def bug_detail(request, bug_id):
 def project_view(request, project_id):
     user_org = request.user.userprofile.organization
     project = get_object_or_404(Project, id=project_id, organization=user_org)
-    bugs = Bug.objects.filter(project=project, organization=user_org).order_by('-created_at')
+    bugs = Bug.objects.filter(project=project).order_by('-created_at')
     return render(request, 'tracker/project_detail.html', {
         'project': project,
         'bugs': bugs
