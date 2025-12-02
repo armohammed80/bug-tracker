@@ -1,6 +1,13 @@
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from .models import Bug, Comment, Project, User
 from django import forms
+
+
+class LoginForm(AuthenticationForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['username'].widget.attrs.update({'class': 'form-control'})
+        self.fields['password'].widget.attrs.update({'class': 'form-control'})
 
 
 class CustomUserCreationForm(UserCreationForm):
@@ -24,12 +31,11 @@ class CustomUserCreationForm(UserCreationForm):
 
 
 class BugForm(forms.ModelForm):
+    description = forms.CharField(strip=False, widget=forms.Textarea(attrs={'rows': 4}))
+
     class Meta:
         model = Bug
         fields = ['title', 'description', 'status', 'severity', 'project', 'assigned_to']
-        widgets = {
-            'description': forms.Textarea(attrs={'rows': 4}),
-        }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -38,6 +44,8 @@ class BugForm(forms.ModelForm):
 
 
 class CommentForm(forms.ModelForm):
+    content = forms.CharField(strip=False, required=False)
+
     class Meta:
         model = Comment
         fields = ['content']
@@ -48,12 +56,10 @@ class CommentForm(forms.ModelForm):
             }),
         }
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['content'].required = False
-
 
 class ProjectForm(forms.ModelForm):
+    description = forms.CharField(strip=False)
+
     class Meta:
         model = Project
         fields = ['name', 'description']

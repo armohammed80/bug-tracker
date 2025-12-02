@@ -16,7 +16,7 @@
                 {% endfor %}
             </div>
         {% endif %}
-        <form method="post" action="{% url 'login' %}?next=/">
+        <form method="post" class="border p-4 rounded shadow-sm" action="{% url 'login' %}?next=/">
             {% csrf_token %}
             <div class="mb-3">
                 <label for="id_username">Username or Email:</label>

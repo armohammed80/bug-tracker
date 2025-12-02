@@ -13,13 +13,12 @@ class Organization(models.Model):
 
 
 class User(AbstractUser):
-    username = models.CharField(max_length=100, unique=False)
-    name = models.CharField(max_length=100, unique=True)
+    username = models.CharField(max_length=100, unique=True)
+    name = models.CharField(max_length=100)
     email = models.EmailField(unique=True)
     organization = models.ForeignKey(Organization, on_delete=models.CASCADE, null=True)
 
-    USERNAME_FIELD = "email"
-    REQUIRED_FIELDS = ["username"]
+    REQUIRED_FIELDS = ["email", "name", "organization"]
 
     class Meta:
         unique_together = ("username", "organization")
