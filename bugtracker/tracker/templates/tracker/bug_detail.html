@@ -46,7 +46,7 @@
     <p>
         <strong>Created by:</strong> {{ bug.created_by.username }}
         <span class="badge bg-secondary">{{ bug.created_by.groups.first.name|default:"Unassigned" }}</span>
-        <span class="badge bg-secondary">{{ bug.assigned_to.organization|default:"Unassigned" }}</span>
+        <span class="badge bg-secondary">{{ bug.created_by.organization|default:"Unassigned" }}</span>
     </p>
     <p><strong>Created at:</strong> {{ bug.created_at|date:"M d, Y H:i" }} UTC</p>
 
@@ -63,7 +63,7 @@
                             {{ comment.user.groups.first.name|default:"Unassigned" }}
                         </span>
                         <span class="badge bg-info text-dark">
-                            {{ comment.user.groups.first.name|default:"Unassigned" }}
+                            {{ comment.user.organization|default:"Unassigned" }}
                         </span>
                         <p class="mb-1">{{ comment.content }}</p>
                     </div>
