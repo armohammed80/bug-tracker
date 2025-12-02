@@ -25,7 +25,7 @@
         <select name="assigned_to" id="assigned_to" class="form-select w-auto me-2">
             {% for u in users %}
                 <option value="{{ u.id }}" {% if bug.assigned_to and bug.assigned_to.id == u.id %}selected{% endif %}>
-                    {{ u.name }} - {{ u.username }}
+                    {{ u.name }} - {{ u.username }} - {{ u.organization }}
                     {% if u.groups.first %}
                         ({{ u.groups.first.name }})
                     {% else %}
@@ -40,11 +40,13 @@
     <p>
         <strong>Assigned to:</strong> {{ bug.assigned_to }}
         <span class="badge bg-secondary">{{ bug.assigned_to.groups.first.name|default:"Unassigned" }}</span>
+        <span class="badge bg-secondary">{{ bug.assigned_to.organization|default:"Unassigned" }}</span>
     </p>
     {% endif %}
     <p>
         <strong>Created by:</strong> {{ bug.created_by.username }}
         <span class="badge bg-secondary">{{ bug.created_by.groups.first.name|default:"Unassigned" }}</span>
+        <span class="badge bg-secondary">{{ bug.assigned_to.organization|default:"Unassigned" }}</span>
     </p>
     <p><strong>Created at:</strong> {{ bug.created_at|date:"M d, Y H:i" }} UTC</p>
 
@@ -57,6 +59,9 @@
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
                         <strong>{{ comment.user.username }}</strong>
+                        <span class="badge bg-info text-dark">
+                            {{ comment.user.groups.first.name|default:"Unassigned" }}
+                        </span>
                         <span class="badge bg-info text-dark">
                             {{ comment.user.groups.first.name|default:"Unassigned" }}
                         </span>

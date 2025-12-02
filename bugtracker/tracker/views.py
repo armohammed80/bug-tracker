@@ -14,8 +14,7 @@ def dashboard(request):
 
 @login_required
 def bug_detail(request, bug_id):
-    user_org = request.user.userprofile.organization
-    bug = get_object_or_404(Bug, id=bug_id, organization=user_org)
+    bug = get_object_or_404(Bug, id=bug_id)
     comments = bug.comment_set.all().order_by('created_at')
 
     if request.method == 'POST':
@@ -28,7 +27,7 @@ def bug_detail(request, bug_id):
                 return redirect('bug_detail', bug_id=bug.id)
         if 'assigned_to' in request.POST:
             if assigned_person := request.POST['assigned_to']:
-                bug.assigned_to = get_object_or_404(User, id=assigned_person, userprofile__organization=bug.organization)
+                bug.assigned_to = get_object_or_404(User, id=assigned_person)
                 bug.save()
                 return redirect('bug_detail', bug_id=bug.id)
         if form.is_valid():
@@ -45,7 +44,7 @@ def bug_detail(request, bug_id):
         'comments': comments,
         'comment_form': form,
         'status_choices': Bug.STATUS_CHOICES,
-        'users': User.objects.filter(userprofile__organization=bug.organization),
+        'users': User.objects.all(),
     }
     return render(request, 'tracker/bug_detail.html', context)
 
@@ -75,8 +74,7 @@ def create_bug(request):
 
 @login_required
 def project_list(request):
-    user_org = request.user.userprofile.organization
-    projects = Project.objects.filter(organization=user_org)
+    projects = Project.objects.all()
     return render(request, 'tracker/project_list.html', {'projects': projects})
 
 @login_required
